@@ -1,0 +1,15 @@
+#cover{position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;    background-position: center 0%;
+    height: 100%;    background-image: url(assets/img/bj.png);background-attachment: fixed;
+}
+img.logo{width:14px;height:14px;margin:0 5px 0 3px;}
+.onclick{cursor: pointer;touch-action: manipulation;}
+.giftlist{overflow:hidden;width:90%;margin:0 auto}
+.giftlist ul{height:270px;overflow:hidden;padding:0}
+.giftlist li{width:100%;line-height:35px;padding:0 10px;overflow:hidden;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.giftlist li strong{margin:0 5px 0 0;font-weight:400;color:#1977d8}

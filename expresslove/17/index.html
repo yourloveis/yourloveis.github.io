@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <title>有句话想对你说太久了</title>
+  <meta name="keywords" content="抖音表白,抖音我爱你,抖音上输入我爱你">
+  <meta name="description" content="我喜欢你">
+  <link rel="alternate icon" type="image/ico" href="images/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="images/app-icon72x72@2x.png">
+  <link href="http://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="http://lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/plugins.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/oneui.css">
+
+  <script src="http://lib.baomitu.com/modernizr/2.8.3/modernizr.min.js"></script>
+  <link rel="stylesheet" href="css/ahao.css">
+  <script  src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+   <script src="js/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//lib.baomitu.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+ <img  style="background: linear-gradient(to bottom,	#D1E9E9,#FF9797);"  class="full-bg full-bg-bottom" ondragstart="return false;" oncontextmenu="return false;">
+</head>
+    <body>
+<div class="col-xs-12 col-sm-10 col-md-8 col-lg-4 center-block" style="float: none;">
+  <br /><br />
+	  <div class="modal-body">
+	  	  <div class="list-group-item reed"><br /><br /><center><img src="images/1.png"><br /><br />提交<font color=green>“我喜欢你”</font>三字就能看到我想对您说的话了</center><br /></div>
+<div class="list-group-item reed">
+        <input type="text" name="love" id="love" value=""  placeholder="没错，就是在这里输入“我喜欢你”" class="form-control" required/><br />
+        <input type="submit" id="sub" class="btn btn-primary btn-block" value="立即提交"><br />
+<div class="btn btn-danger  btn-block" id="bx" >不想提交</div><br />
+</div>
+</div>
+</body>
+      <script type="text/javascript">
+       var i=1;
+$(function(){		
+     $("#bx").click(function(){
+            switch(i){
+                case 1:
+                    alert("不想提交？不存在的！");
+                    break;
+                case 2:
+                    alert("都说了不存在的！");
+                    break;
+                case 3:
+                    alert("这么执着的吗？我喜欢，嘻嘻！");
+                    break;
+				case 4:
+                    alert("这里没用的，听话，快去提交！");
+                    break;
+                default:
+                    alert("求求你快提交一下吧TAT");
+            }
+            i++;
+        })
+         })
+    </script>
+      <script>
+        $('#sub').on('click', (function() {
+    var val = $('#love').val()
+    if(val == '我喜欢你') {
+        alert('输入正确，准备好了吗？')      
+				 window.setTimeout("window.location.href='love.html'", 2000);
+     } else {
+        alert('乱输入可不行的哟~')
+    }
+}))
+    </script>
+<script type="text/javascript">
+$(function(){
+pushHistory();
+window.addEventListener("popstate", function(e) {
+alert("别这么着急离开,你试试输入看看,万一有惊喜呢！");//根据自己的需求实现自己的功能
+}, false);
+function pushHistory() {
+var state = {
+title: "title",
+url: "#"
+};
+window.history.pushState(state, "title", "#");
+}
+});</script>
+</html>
